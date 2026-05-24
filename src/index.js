@@ -13,8 +13,8 @@ const routes = require('./routes');
 app.use(express.json());
 
 app.use(express.urlencoded({
-    extended: true,
-    limit: '1mb'
+  extended: true,
+  limit: '1mb'
 }));
 
 app.use('/v1', routes);
